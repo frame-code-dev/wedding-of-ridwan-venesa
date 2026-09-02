@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ridwan & Venesa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     MUSIK
+===================================================== -->
+
+<audio id="music" loop>
+    <source src="assets/musik.mpeg" type="audio/mpeg">
+</audio>
+
+
+<button
+    id="musicButton"
+    onclick="toggleMusic()"
+    class="music-button">
+
+    ♪
+
+</button>
+
+
+
+<!-- =====================================================
+     OPENING
+===================================================== -->
+
+<div id="opening">
+
+    <div class="moving-batik"></div>
+
+    <div class="red-light"></div>
+
+
+    <!-- WAYANG -->
+
+    <div class="wayang wayang-left">
+
+        <div class="wayang-head"></div>
+        <div class="wayang-body"></div>
+        <div class="wayang-arm"></div>
+
+    </div>
+
+
+    <div class="wayang wayang-right">
+
+        <div class="wayang-head"></div>
+        <div class="wayang-body"></div>
+        <div class="wayang-arm"></div>
+
+    </div>
+
+
+    <div class="opening-content">
+
+
+        <div class="small-title">
+            UNDANGAN PAWIWAHAN
+        </div>
+
+
+        <!-- GUNUNGAN -->
+
+        <div class="gunungan">
+
+            <span class="gunungan-star">
+                ✦
+            </span>
+
+            <span class="gunungan-tree">
+                ❧
+            </span>
+
+            <span class="gunungan-dots">
+                • • •
+            </span>
+
+        </div>
+
+
+        <div class="script">
+            The Wedding of
+        </div>
+
+
+        <h1>
+
+            Ridwan
+
+            <span>&</span>
+
+            Venesa
+
+        </h1>
+
+
+        <div class="date">
+            20 · 09 · 2026
+        </div>
+
+
+        <div class="ornament-line">
+
+            <i></i>
+
+            ❖
+
+            <i></i>
+
+        </div>
+
+
+        <div class="guest">
+
+            <small>
+                Kepada Yth.
+            </small>
+
+            <strong id="guestName">
+                Bapak / Ibu / Saudara / i
+            </strong>
+
+        </div>
+
+
+        <button
+            class="open-button"
+            onclick="openInvitation()">
+
+            ♡ &nbsp; BUKA UNDANGAN
+
+        </button>
+
+
+        <div class="jawa-footer">
+            NGURI-URI KABUDAYAN JAWA
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar">
+
+    <a href="#home">
+        HOME
+    </a>
+
+    <a href="#mempelai">
+        MEMPELAI
+    </a>
+
+    <a href="#prewedding">
+        PREWEDDING
+    </a>
+
+    <a href="#acara">
+        ACARA
+    </a>
+
+    <a href="#cerita">
+        CERITA
+    </a>
+
+    <a href="#gift">
+        TANDA KASIH
+    </a>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home" class="hero">
+
+    <div class="batik"></div>
+
+    <div class="hero-wayang left"></div>
+
+    <div class="hero-wayang right"></div>
+
+
+    <div class="hero-content">
+
+
+        <div class="small-title">
+            MINGGU
+        </div>
+
+
+        <div class="big-date">
+            20
+        </div>
+
+
+        <div class="month">
+            SEPTEMBER 2026
+        </div>
+
+
+        <div class="gunungan">
+
+            <span class="gunungan-star">
+                ✦
+            </span>
+
+            <span class="gunungan-tree">
+                ❧
+            </span>
+
+            <span class="gunungan-dots">
+                • • •
+            </span>
+
+        </div>
+
+
+        <div class="script">
+            Kanthi Asmara
+        </div>
+
+
+        <h2>
+
+            Ridwan
+
+            <em>&</em>
+
+            Venesa
+
+        </h2>
+
+
+        <div class="ornament-line">
+
+            <i></i>
+
+            ❖
+
+            <i></i>
+
+        </div>
+
+
+        <p>
+
+            Dengan memohon ridho dan rahmat
+            Tuhan Yang Maha Esa, kami bermaksud
+            menyelenggarakan pernikahan kami.
+
+        </p>
+
+
+        <div class="javanese-quote">
+
+            “Tresna iku tuwuh,
+            ngrembaka, lan langgeng.”
+
+        </div>
+
+
+        <small>
+
+            Cinta tumbuh, berkembang,
+            dan semoga abadi.
+
+        </small>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MEMPELAI
+===================================================== -->
+
+<section id="mempelai" class="section couple-section">
+
+
+    <div class="section-title">
+
+        <div class="small-title">
+            PAWIWAHAN
+        </div>
+
+
+        <div class="script">
+            Katresnan
+        </div>
+
+
+        <h2>
+            Dua Hati,
+            Satu Tujuan
+        </h2>
+
+
+        <p>
+
+            Dua insan dipertemukan dalam
+            perjalanan cinta dan akan
+            melangkah bersama menuju
+            kehidupan baru.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- =================================================
+         DESAIN MEMPELAI BARU
+    ================================================== -->
+
+    <div
+        class="couple"
+        style="
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:0;
+            width:100%;
+        ">
+
+
+        <!-- =================================================
+             INISIAL BERSAMA
+        ================================================== -->
+
+        <div
+            class="couple-initial"
+            style="
+                text-align:center;
+                margin:5px auto 30px;
+                position:relative;
+                width:min(90%,650px);
+            ">
+
+            <div
+                style="
+                    font-family:'Great Vibes',cursive;
+                    font-size:72px;
+                    line-height:1;
+                    letter-spacing:4px;
+                    margin-bottom:12px;
+                ">
+
+                R <span style="font-family:'Cormorant Garamond',serif;font-size:42px;">&</span> V
+
+            </div>
+
+
+            <!-- GARIS MOTIF BATIK -->
+
+            <div
+                style="
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    gap:12px;
+                    width:100%;
+                    margin:0 auto;
+                ">
+
+                <span
+                    style="
+                        height:1px;
+                        flex:1;
+                        background:linear-gradient(
+                            to right,
+                            transparent,
+                            currentColor
+                        );
+                        opacity:.7;
+                    ">
+                </span>
+
+
+                <span
+                    style="
+                        font-size:18px;
+                        letter-spacing:5px;
+                        white-space:nowrap;
+                    ">
+
+                    ❖ 〰 ❖ 〰 ❖
+
+                </span>
+
+
+                <span
+                    style="
+                        height:1px;
+                        flex:1;
+                        background:linear-gradient(
+                            to left,
+                            transparent,
+                            currentColor
+                        );
+                        opacity:.7;
+                    ">
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RIDWAN
+        ================================================== -->
+
+        <div
+            class="person"
+            style="
+                width:min(92%,600px);
+                text-align:center;
+                margin:0 auto 28px;
+            ">
+
+
+            <div class="role">
+                THE GROOM
+            </div>
+
+
+            <h3>
+                Ridwan Efendi
+            </h3>
+
+
+            <div
+                class="gold-symbol"
+                style="
+                    margin:10px 0;
+                ">
+                ❖
+            </div>
+
+
+            <p>
+
+                <strong>
+                    Putra Pertama dari
+                </strong>
+
+                <br>
+
+                Bpk. Yunasril
+                <br>
+                & Ibu. Nurnely
+
+            </p>
+
+        </div>
+
+
+
+        <!-- GARIS PEMISAH BATIK -->
+
+        <div
+            style="
+                width:min(82%,500px);
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin:5px auto 30px;
+                opacity:.75;
+            ">
+
+            <span
+                style="
+                    height:1px;
+                    flex:1;
+                    background:currentColor;
+                ">
+            </span>
+
+            <span
+                style="
+                    margin:0 14px;
+                    font-size:16px;
+                    letter-spacing:4px;
+                ">
+                ❖ 〰 ❖
+            </span>
+
+            <span
+                style="
+                    height:1px;
+                    flex:1;
+                    background:currentColor;
+                ">
+            </span>
+
+        </div>
+
+
+
+        <!-- =================================================
+             VENESA
+        ================================================== -->
+
+        <div
+            class="person"
+            style="
+                width:min(92%,600px);
+                text-align:center;
+                margin:0 auto;
+            ">
+
+
+            <div class="role">
+                THE BRIDE
+            </div>
+
+
+            <h3>
+                Venesa Audria
+            </h3>
+
+
+            <div
+                class="gold-symbol"
+                style="
+                    margin:10px 0;
+                ">
+                ❖
+            </div>
+
+
+            <p>
+
+                <strong>
+                    Putri Pertama dari
+                </strong>
+
+                <br>
+
+                Bpk. Dodik Marwantono
+                <br>
+                & Ibu. Insriah
+
+            </p>
+
+        </div>
+
+
+
+        <!-- GARIS MOTIF BATIK BAWAH -->
+
+        <div
+            style="
+                width:min(90%,650px);
+                margin:35px auto 0;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                gap:12px;
+            ">
+
+            <span
+                style="
+                    height:1px;
+                    flex:1;
+                    background:linear-gradient(
+                        to right,
+                        transparent,
+                        currentColor
+                    );
+                    opacity:.55;
+                ">
+            </span>
+
+            <span
+                style="
+                    font-size:16px;
+                    letter-spacing:5px;
+                ">
+                ❖ 〰 ❖ 〰 ❖
+            </span>
+
+            <span
+                style="
+                    height:1px;
+                    flex:1;
+                    background:linear-gradient(
+                        to left,
+                        transparent,
+                        currentColor
+                    );
+                    opacity:.55;
+                ">
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PREWEDDING
+===================================================== -->
+
+<section
+    id="prewedding"
+    class="section prewedding-section"
+    style="
+        position:relative;
+        overflow:hidden;
+        text-align:center;
+    ">
+
+
+    <div class="moving-batik"></div>
+
+
+    <div
+        style="
+            position:relative;
+            z-index:2;
+            max-width:900px;
+            margin:0 auto;
+        ">
+
+
+        <div class="small-title">
+            MOMENT OF US
+        </div>
+
+
+        <div
+            class="script"
+            style="
+                margin-top:8px;
+            ">
+            Kenangan Indah
+        </div>
+
+
+        <h2
+            style="
+                margin:10px 0 12px;
+            ">
+            Ridwan & Venesa
+        </h2>
+
+
+        <p
+            style="
+                max-width:550px;
+                margin:0 auto 30px;
+                line-height:1.8;
+            ">
+
+            Setiap perjalanan memiliki cerita,
+            dan setiap cerita memiliki kenangan
+            yang ingin kami simpan selamanya.
+
+        </p>
+
+
+        <!-- ORNAMEN -->
+
+        <div
+            style="
+                font-size:22px;
+                margin-bottom:20px;
+            ">
+
+            ❧ &nbsp; ✦ &nbsp; ❖ &nbsp; ✦ &nbsp; ❧
+
+        </div>
+
+
+        <!-- FOTO PREWEDDING -->
+
+        <div
+            style="
+                position:relative;
+                width:min(88%,520px);
+                margin:0 auto;
+                padding:12px;
+                box-sizing:border-box;
+                background:rgba(40,18,12,.72);
+                border:1px solid rgba(200,160,90,.65);
+                box-shadow:
+                    0 15px 45px rgba(0,0,0,.35),
+                    inset 0 0 0 1px rgba(255,255,255,.04);
+            ">
+
+
+            <div
+                style="
+                    position:absolute;
+                    inset:5px;
+                    border:1px solid rgba(200,160,90,.28);
+                    pointer-events:none;
+                ">
+            </div>
+
+
+            <img
+                src="assets/kak ve.jpeg"
+                alt="Foto Prewedding Ridwan dan Venesa"
+                style="
+                    display:block;
+                    width:100%;
+                    height:auto;
+                    max-height:700px;
+                    object-fit:cover;
+                    object-position:center;
+                    position:relative;
+                    z-index:1;
+                ">
+
+        </div>
+
+
+        <div
+            style="
+                margin-top:24px;
+            ">
+
+            <div class="script">
+                A Moment To Remember
+            </div>
+
+            <p
+                style="
+                    margin-top:8px;
+                    line-height:1.8;
+                ">
+
+                Semoga setiap langkah yang kami jalani
+                menjadi cerita indah yang tak pernah berakhir.
+
+            </p>
+
+        </div>
+
+
+        <div
+            style="
+                font-size:20px;
+                margin-top:25px;
+            ">
+
+            ❧ &nbsp; ❖ &nbsp; ❧
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ACARA
+===================================================== -->
+
+<section id="acara" class="section acara">
+
+
+    <div class="section-title">
+
+        <div class="small-title">
+            RANGKAIAN PAWIWAHAN
+        </div>
+
+
+        <div class="script">
+            Dina Bahagia
+        </div>
+
+
+        <h2>
+            Hari Bahagia Kami
+        </h2>
+
+
+        <p>
+
+            Dengan penuh rasa syukur,
+            kami mengundang Bapak/Ibu/Saudara/i
+            untuk hadir memberikan doa restu.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="events">
+
+
+        <!-- AKAD -->
+
+        <div class="event">
+
+            <div class="event-number">
+                01
+            </div>
+
+
+            <div class="event-symbol">
+                ❧
+            </div>
+
+
+            <div class="small-title">
+                AKAD NIKAH
+            </div>
+
+
+            <h3>
+                Akad Nikah
+            </h3>
+
+
+            <div class="event-date">
+
+                MINGGU
+
+                <strong>
+                    20 SEPTEMBER 2026
+                </strong>
+
+            </div>
+
+
+            <div class="event-time">
+                07.30 WIB
+            </div>
+
+
+            <p>
+
+                Dsn. Mabung
+                <br>
+                RT. 01 / RW. 02
+                <br>
+                Kec. Baron,
+                Kab. Nganjuk
+
+            </p>
+
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=-7.564155%2C112.0219221"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-button"
+                style="
+                    text-decoration:none;
+                    display:inline-block;
+                ">
+
+                📍 LOKASI
+
+            </a>
+
+        </div>
+
+
+
+        <!-- TEMU MANTEN -->
+
+        <div class="event">
+
+            <div class="event-number">
+                02
+            </div>
+
+
+            <div class="event-symbol">
+                ❧
+            </div>
+
+
+            <div class="small-title">
+                TEMU MANTEN
+            </div>
+
+
+            <h3>
+                Temu Manten
+            </h3>
+
+
+            <div class="event-date">
+
+                MINGGU
+
+                <strong>
+                    20 SEPTEMBER 2026
+                </strong>
+
+            </div>
+
+
+            <div class="event-time">
+                10.00 WIB
+            </div>
+
+
+            <p>
+
+                Dsn. Mabung
+                <br>
+                RT. 01 / RW. 02
+                <br>
+                Kec. Baron,
+                Kab. Nganjuk
+
+            </p>
+
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=-7.564155%2C112.0219221"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-button"
+                style="
+                    text-decoration:none;
+                    display:inline-block;
+                ">
+
+                📍 LOKASI
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- QR LOKASI -->
+
+    <div
+        style="
+            position:relative;
+            z-index:3;
+            text-align:center;
+            margin:45px auto 10px;
+        ">
+
+
+        <div class="small-title">
+            PETUNJUK LOKASI
+        </div>
+
+
+        <div
+            class="script"
+            style="
+                margin-bottom:12px;
+            ">
+
+            Temukan Lokasi Kami
+
+        </div>
+
+
+        <a
+            href="https://www.google.com/maps/search/?api=1&query=-7.564155%2C112.0219221"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="
+                display:inline-block;
+                text-decoration:none;
+                cursor:pointer;
+            ">
+
+
+            <img
+                src="assets/alamat.jpeg"
+                alt="QR Code Lokasi Pernikahan"
+                style="
+                    display:block;
+                    width:180px;
+                    height:180px;
+                    object-fit:contain;
+                    margin:0 auto;
+                    cursor:pointer;
+                ">
+
+
+        </a>
+
+
+        <p
+            style="
+                margin:15px 0 0;
+                font-size:9px;
+                letter-spacing:2px;
+                line-height:1.7;
+            ">
+
+            SCAN QR CODE ATAU KLIK QR<br>
+            UNTUK MEMBUKA GOOGLE MAPS
+
+        </p>
+
+
+        <div
+            style="
+                margin-top:12px;
+                font-size:18px;
+            ">
+
+            ❧ &nbsp; ❖ &nbsp; ❧
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     COUNTDOWN
+===================================================== -->
+
+<section class="countdown-section">
+
+
+    <div class="moving-batik"></div>
+
+
+    <div class="countdown-content">
+
+
+        <div class="small-title">
+            MENUJU HARI BAHAGIA
+        </div>
+
+
+        <div class="script">
+            Mugi Langgeng
+        </div>
+
+
+        <h2>
+            20 September 2026
+        </h2>
+
+
+        <div class="countdown">
+
+
+            <div>
+
+                <strong id="days">
+                    00
+                </strong>
+
+                <span>
+                    HARI
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong id="hours">
+                    00
+                </strong>
+
+                <span>
+                    JAM
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong id="minutes">
+                    00
+                </strong>
+
+                <span>
+                    MENIT
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong id="seconds">
+                    00
+                </strong>
+
+                <span>
+                    DETIK
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CERITA
+===================================================== -->
+
+<section id="cerita" class="story">
+
+
+    <div class="moving-batik"></div>
+
+
+    <div class="story-wayang one"></div>
+
+    <div class="story-wayang two"></div>
+
+
+    <div class="story-content">
+
+
+        <div class="large-gunungan">
+
+            ✦
+
+            <br><br>
+
+            ❧
+
+            <br><br>
+
+            • • •
+
+        </div>
+
+
+        <div class="small-title">
+            FILOSOFI JAWA
+        </div>
+
+
+        <div class="script">
+            Sangkan Paraning Dumadi
+        </div>
+
+
+        <h2>
+
+            Satu perjalanan
+            <br>
+            menuju selamanya.
+
+        </h2>
+
+
+        <div class="story-line"></div>
+
+
+        <p>
+
+            Pertemuan dua insan bukan sekadar
+            kebetulan. Ada doa, harapan,
+            dan perjalanan panjang yang membawa
+            Ridwan dan Venesa menuju hari
+            istimewa ini.
+
+        </p>
+
+
+        <p>
+
+            Semoga langkah yang dimulai bersama
+            menjadi perjalanan penuh keberkahan,
+            ketenteraman, kesabaran,
+            dan cinta.
+
+        </p>
+
+
+        <div class="javanese-quote">
+
+            “Rukun agawe santosa,
+            crah agawe bubrah.”
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GIFT
+===================================================== -->
+
+<section id="gift" class="section gift">
+
+
+    <div class="section-title">
+
+
+        <div class="small-title">
+            TANDA KASIH
+        </div>
+
+
+        <div class="script">
+            Suka Cita
+        </div>
+
+
+        <h2>
+            Digital Gift
+        </h2>
+
+
+        <p>
+
+            Bagi Bapak/Ibu/Saudara/i yang ingin
+            memberikan tanda kasih, dapat melalui
+            rekening berikut.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="banks">
+
+
+        <!-- RIDWAN -->
+
+        <div class="bank">
+
+
+            <div class="bank-pattern"></div>
+
+
+            <div class="small-title">
+                MEMPELAI PRIA
+            </div>
+
+
+            <div class="bank-name">
+                BCA
+            </div>
+
+
+            <h3>
+                RIDWAN EFENDI
+            </h3>
+
+
+            <div class="account">
+                7235430916
+            </div>
+
+
+            <button
+                onclick="copyRekening('7235430916')">
+
+                SALIN REKENING
+
+            </button>
+
+        </div>
+
+
+
+        <!-- VENESA -->
+
+        <div class="bank">
+
+
+            <div class="bank-pattern"></div>
+
+
+            <div class="small-title">
+                MEMPELAI WANITA
+            </div>
+
+
+            <div class="bank-name">
+                BCA
+            </div>
+
+
+            <h3>
+                VENESA AUDRIA
+            </h3>
+
+
+            <div class="account">
+                6750503584
+            </div>
+
+
+            <button
+                onclick="copyRekening('6750503584')">
+
+                SALIN REKENING
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="copyMessage"></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLOSING
+===================================================== -->
+
+<section class="closing">
+
+
+    <div class="moving-batik"></div>
+
+
+    <div class="closing-content">
+
+
+        <div class="large-gunungan">
+
+            ✦
+
+            <br><br>
+
+            ❧
+
+        </div>
+
+
+        <div class="small-title">
+            MATUR NUWUN
+        </div>
+
+
+        <div class="script">
+            Sampun Rawuh
+        </div>
+
+
+        <h2>
+            Terima Kasih
+        </h2>
+
+
+        <p>
+
+            Atas doa, restu, dan kasih sayang
+            Bapak/Ibu/Saudara/i.
+
+            Kehadiran dan doa restu Anda
+            merupakan kebahagiaan bagi kami.
+
+        </p>
+
+
+        <div class="heart">
+            ♥
+        </div>
+
+
+        <div class="closing-names">
+
+            Ridwan
+
+            <span>
+                &
+            </span>
+
+            Venesa
+
+        </div>
+
+
+        <div class="closing-date">
+            20 · 09 · 2026
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
